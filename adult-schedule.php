@@ -23,7 +23,7 @@ $characters = json_decode($data, true); // decode the JSON feed
                     <div class="schedule-box" id="adult">
                         <?php
                         foreach ($characters['feed']['entry'] as $item) {
-                            if ($item['gsx$scheduletitle']['$t'] != "" && $item['gsx$scheduletitle']['$t'] != "") {
+                            if ($item['gsx$scheduletitle']['$t'] != "" && $item['gsx$scheduletext']['$t'] != "") {
                                 echo '<h3>' . $item['gsx$scheduletitle']['$t'] . '<h3>';
                                 echo '<p class="text-grey">' . $item['gsx$scheduletext']['$t'] . '</p>';
                             }

@@ -429,6 +429,17 @@ header {
   background-position: center;
   background-image: url("../img/background/about-bg.jpg"); }
 
+.prepro-bg {
+  position: relative;
+  width: 100%;
+  min-height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  background-position: center;
+  background-image: url("../img/background/prepro-bg.jpg"); }
+
 #top-content {
   padding: 0px 0; }
 
@@ -661,8 +672,8 @@ div#team {
   display: inline !important; }
 
 h3 {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   font-weight: 600; }
 
 .table > tbody > tr > td, .table > tbody > tr > th {
@@ -1084,5 +1095,14 @@ i.fa.fa-expand.fa-2x {
   padding-left: .5rem;
   margin-top: 2.5rem;
   margin-bottom: 1.5rem; }
+
+div#prepro {
+  margin-bottom: 3rem; }
+
+img.fluid-img {
+  width: 100%; }
+
+#prepro-main {
+  margin-bottom: 6rem; }
 
 /*# sourceMappingURL=style.css.map */
