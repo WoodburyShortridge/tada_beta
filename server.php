@@ -47,5 +47,13 @@ $data = file_get_contents($url); // put the contents of the file into a variable
 
 file_put_contents('data/about.json', $data);
 
+// pre-pro
+$ID = '1ucgFC0hL_FeFfI04XLUxOhCSz9AJjB7wYluKs1UKkEU';
+$gridID = '6';
+$url = 'https://spreadsheets.google.com/feeds/list/' . $ID . '/' . $gridID . '/public/values?alt=json'; // path to your JSON file
+$data = file_get_contents($url); // put the contents of the file into a variable
+
+file_put_contents('data/prepro.json', $data);
+
 echo '<h1> Tadaatlanta.com updated </h1>';
 ?>
