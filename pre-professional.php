@@ -39,16 +39,6 @@ $characters = json_decode($data, true); // decode the JSON feed
     <section class="no-padding" id="portfolio">
         <div class="container" id="prepro-main">
             <div class="row">
-                <div class="col-sm-12">
-                    <?php
-                    foreach ($characters['feed']['entry'] as $item) {
-                        if ($item['gsx$preprotitle']['$t'] != "" && $item['gsx$preprotext']['$t'] != "") {
-                            echo '<h3>' . $item['gsx$preprotitle']['$t'] . '</h3>';
-                            echo '<p class="text-grey">' . $item['gsx$preprotext']['$t'] . '</p>';
-                        }
-                    }
-                    ?>
-                </div>
                 <div class="col-sm-12 col-md-6">
                     <?php
                     foreach ($characters['feed']['entry'] as $item) {
@@ -155,6 +145,16 @@ $characters = json_decode($data, true); // decode the JSON feed
                         }
                     }
                     echo '</ul>';
+                    ?>
+                </div>
+                <div class="col-sm-12">
+                    <?php
+                    foreach ($characters['feed']['entry'] as $item) {
+                        if ($item['gsx$preprotitle']['$t'] != "" && $item['gsx$preprotext']['$t'] != "") {
+                            echo '<h3>' . $item['gsx$preprotitle']['$t'] . '</h3>';
+                            echo '<p class="text-grey">' . $item['gsx$preprotext']['$t'] . '</p>';
+                        }
+                    }
                     ?>
                 </div>
             </div>
