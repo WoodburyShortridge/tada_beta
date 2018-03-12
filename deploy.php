@@ -115,6 +115,6 @@ class Deploy {
         }
     }
 }
-// This is just an example test
-$deploy = new Deploy('/tada_beta');
+// This is just an example tesssst
+$deploy = new Deploy('/');
 $deploy->execute();
