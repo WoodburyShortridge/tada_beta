@@ -49,6 +49,7 @@
                         <li><a href="/adult-classes">Adults</a></li>
                         <li role="separator" class="divider"></li>
                         <li><a href="/kid-classes">Kids</a></li>
+                        <li role="separator" class="divider"></li>
                         <li><a href="/pre-professional">Pre-Professional</a></li>
                     </ul>
                 </li>
