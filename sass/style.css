@@ -1108,4 +1108,8 @@ img.fluid-img {
 #prepro-main div {
   margin-bottom: 2rem; }
 
+#prepro-main img {
+  box-shadow: 2px 4px 14px 5px rgba(0, 0, 0, 0.12), 1px 3px 8px 2px rgba(0, 0, 0, 0.24);
+  border-radius: 2px; }
+
 /*# sourceMappingURL=style.css.map */
