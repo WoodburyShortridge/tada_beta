@@ -56,4 +56,5 @@ $data = file_get_contents($url); // put the contents of the file into a variable
 file_put_contents('data/prepro.json', $data);
 
 echo '<h1> Tadaatlanta.com updated </h1>';
+echo '<a href="./"> View Changes </a>';
 ?>
