@@ -157,6 +157,17 @@ $characters = json_decode($data, true); // decode the JSON feed
                     }
                     ?>
                 </div>
+                <div class="col-sm-12">
+                    <?php
+                    foreach ($characters['feed']['entry'] as $item) {
+                        if ($item['gsx$moreimages']['$t'] != "") {
+                            echo '<div class="col-sm-6 col-md-4">';
+                            echo '<img class="fluid-img" alt="pre-pro" src="img/' . $item['gsx$moreimages']['$t'] . '" >';
+                            echo '</div>';
+                        }
+                    }
+                    ?>
+                </div>
             </div>
 
         </div>
