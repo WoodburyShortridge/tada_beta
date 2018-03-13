@@ -33,7 +33,7 @@ $characters = json_decode($data, true); // decode the JSON feed
             </div>
         </div>
     </section>
-</section >
+</section>
 
 
     <section class="no-padding" id="portfolio">
