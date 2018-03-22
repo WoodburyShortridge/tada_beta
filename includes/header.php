@@ -17,6 +17,7 @@
     <meta name="geo.position" content="33.818836;-84.351227" />
     <meta name="ICBM" content="33.818836, -84.351227" />
     <meta name="msvalidate.01" content="CD9651592C3794A9BC07707281F8397C" />
+    <meta name="google-site-verification" content="nw3P7Ru32MQWP0NbOpbzqqfW4TfMV3hQPozDjuyyFcc" />
     <!-- ****** favicons ****** -->
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
