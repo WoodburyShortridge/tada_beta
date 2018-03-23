@@ -54,7 +54,8 @@ $characters = json_decode($data, true); // decode the JSON feed
                     echo '<a href="' . $item['gsx$slink']['$t'] . '">';
                     echo '<div class="service-box">';
                     echo '<img src="img/services/' . $item['gsx$sphoto']['$t'] . '" alt="' . $item['gsx$salt']['$t'] . '" class="service-img sr-icons">';
-                    echo '<h3>' . $item['gsx$stitle']['$t'] . '<span class="label label-default">' . $item['gsx$slabel']['$t'] . '</span></h3>';
+                    echo '<h3>' . $item['gsx$stitle']['$t'] . '</h3>';
+                    echo '<h4><span class="label label-default">' . $item['gsx$slabel']['$t'] . '</span></h4>';
                     echo '<p class="text-muted">' . $item['gsx$stext']['$t'] . '</p>';
                     echo '</div>';
                     echo '</a>';
