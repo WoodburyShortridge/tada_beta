@@ -1116,4 +1116,8 @@ img.fluid-img {
   list-style: none !important;
   padding-left: 0px !important; }
 
+.class_list ol, .class_list ul {
+  list-style: none !important;
+  padding-left: 0px !important; }
+
 /*# sourceMappingURL=style.css.map */
