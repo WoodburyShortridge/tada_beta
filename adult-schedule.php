@@ -86,8 +86,7 @@ $characters = json_decode($data, true); // decode the JSON feed
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="82290857567" data-widget-version="0.1"></healcode-widget>
-            </div>
+                <healcode-widget data-type="schedules" data-widget-partner="object" data-widget-id="c629085fa52" data-widget-version="1"></healcode-widget>            </div>
         </div>
     </div>
 </section>
