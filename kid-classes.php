@@ -114,113 +114,42 @@ $characters = json_decode($data, true); // decode the JSON feed
                     <span class="caret"></span>
                 </button>
                 <ul class="dropdown-menu">
-                    <li><a href="#more1" class="page-scroll">
-                            <?php
-                            foreach ($characters['feed']['entry'] as $item) {
-                                if ($item['gsx$rotatingclasstitle1']['$t'] != "") {
-                                    echo $item['gsx$rotatingclasstitle1']['$t'];
-                                }
-                            }
-                            ?>
-                        </a></li>
-                    <li><a href="#more" class="page-scroll">
-                            <?php
-                            foreach ($characters['feed']['entry'] as $item) {
-                                if ($item['gsx$rotatingclasstitle']['$t'] != "") {
-                                    echo $item['gsx$rotatingclasstitle']['$t'];
-                                }
-                            }
-                            ?>
-                        </a></li>
-                    <li><a href="#ballet" class="page-scroll">Ballet</a></li>
-                    <li><a href="#ballet2" class="page-scroll">Ballet (Adv)</a></li>
-                    <li><a href="#tap" class="page-scroll">Tap</a></li>
-                    <li><a href="#jazz" class="page-scroll">Jazz</a></li>
-                    <li><a href="#modern" class="page-scroll">Modern</a></li>
-                    <li><a href="#hip-hop" class="page-scroll">Hip-hop</a></li>
+                    <?php
+                    foreach ($characters['feed']['entry'] as $item) {
+                        if ($item['gsx$widgetclasstitle']['$t'] != "") {
+                            echo '<li><a href="#', $item['gsx$widgetclassid']['$t'], '" class="page-scroll">';
+                            echo $item['gsx$widgetclasstitle']['$t'];
+                            echo '</a></li>';
+                        }
+                    }
+                    ?>
                 </ul>
             </div>
 
             <div class="btn-group btn-group-justified desktop" role="group" aria-label="Select Class Type">
-                <a href="#more1" class="page-scroll btn btn-default" role="button">
-                    <?php
-                    foreach ($characters['feed']['entry'] as $item) {
-                        if ($item['gsx$rotatingclasstitle1']['$t'] != "") {
-                            echo $item['gsx$rotatingclasstitle1']['$t'];
-                        }
+                <?php
+                foreach ($characters['feed']['entry'] as $item) {
+                    if ($item['gsx$widgetclasstitle']['$t'] != "") {
+                        echo '<a href="#', $item['gsx$widgetclassid']['$t'], '" class="page-scroll btn btn-default" role="link">';
+                        echo $item['gsx$widgetclasstitle']['$t'];
+                        echo '</a>';
                     }
-                    ?>
-                </a>
-                <a href="#more" class="page-scroll btn btn-default" role="button">
-                    <?php
-                    foreach ($characters['feed']['entry'] as $item) {
-                        if ($item['gsx$rotatingclasstitle']['$t'] != "") {
-                            echo $item['gsx$rotatingclasstitle']['$t'];
-                        }
-                    }
-                    ?>
-                </a>
-                <a href="#ballet" class="page-scroll btn btn-default" role="button">Ballet</a>
-                <a href="#ballet2" class="page-scroll btn btn-default" role="button">Ballet (Adv)</a>
-                <a href="#tap" class="page-scroll btn btn-default" role="button">Tap</a>
-                <a href="#jazz" class="page-scroll btn btn-default" role="button">Jazz</a>
-                <a href="#modern" class="page-scroll btn btn-default" role="button">Modern</a>
-                <a href="#hip-hop" class="page-scroll btn btn-default" role="button">Hip-Hop</a>
+                }
+                ?>
             </div>
         </div>
 
-        <div class="row" id="more1">
-            <div class="col-sm-12">
-                <?php
-                foreach ($characters['feed']['entry'] as $item) {
-                    if ($item['gsx$rotatingclassid1']['$t'] != "") {
-                        echo '<healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-version="0.1" data-widget-id="' . $item['gsx$rotatingclassid1']['$t'] . '"></healcode-widget>';
-                    }
-                }
-                ?>
-            </div>
-        </div>
-        <div class="row" id="more">
-            <div class="col-sm-12">
-                <?php
-                foreach ($characters['feed']['entry'] as $item) {
-                    if ($item['gsx$rotatingclassid']['$t'] != "") {
-                        echo '<healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-version="0.1" data-widget-id="' . $item['gsx$rotatingclassid']['$t'] . '"></healcode-widget>';
-                    }
-                }
-                ?>
-            </div>
-        </div>
-        <div class="row" id="ballet">
-            <div class="col-sm-12">
-                <healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-id="82247027567" data-widget-version="0.1"></healcode-widget>
-            </div>
-        </div>
-        <div class="row" id="ballet2">
-            <div class="col-sm-12">
-                <healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-id="82247037567" data-widget-version="0.1"></healcode-widget>
-            </div>
-        </div>
-        <div class="row" id="tap">
-            <div class="col-sm-12">
-                <healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-id="82247047567" data-widget-version="0.1"></healcode-widget>
-            </div>
-        </div>
-        <div class="row" id="jazz">
-            <div class="col-sm-12">
-                <healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-id="82247057567" data-widget-version="0.1"></healcode-widget>
-            </div>
-        </div>
-        <div class="row" id="modern">
-            <div class="col-sm-12">
-                <healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-id="82247067567" data-widget-version="0.1"></healcode-widget>
-            </div>
-        </div>
-        <div class="row" id="hip-hop">
-            <div class="col-sm-12">
-                <healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-id="82250927567" data-widget-version="0.1"></healcode-widget>
-            </div>
-        </div>
+        <?php
+        foreach ($characters['feed']['entry'] as $item) {
+            if ($item['gsx$widgetclassid']['$t'] != "") {
+                echo '<div class="row" id="',$item['gsx$widgetclassid']['$t'],'">';
+                echo '<div class="col-sm-12">';
+                echo '<healcode-widget data-type="enrollments" data-widget-partner="object" data-widget-version="0.1" data-widget-id="' . $item['gsx$widgetclassid']['$t'] . '"></healcode-widget>';
+                echo '</div></div>';
+            }
+        }
+        ?>
+
     </div>
 </section>
 

@@ -32,7 +32,7 @@ $characters = json_decode($data, true); // decode the JSON feed
                 </div>
                 <div class="col-sm-12 text-center">
                     <div class="schedule-box" id="values">
-                        <h3 >TADA's Core Values</h3>
+                        <h2>TADA's Core Values</h2>
                         <div class="row values">
                             <?php
                             foreach ($characters['feed']['entry'] as $item) {

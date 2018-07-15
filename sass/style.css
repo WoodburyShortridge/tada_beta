@@ -1043,25 +1043,17 @@ a:hover .insta-img span, a:focus .insta-img span {
 
 /* About */
 div#values {
-  background: rgba(30, 28, 28, 0.76);
-  margin-top: .76em;
-  background: rgba(30, 28, 28, 0.76);
-  margin-top: .76em; }
+  margin-top: 3rem;
+  margin-bottom: 1rem; }
   div#values .values {
     margin-top: 1rem; }
-  div#values h3 {
-    color: white;
-    line-height: 2em; }
+  div#values h2 {
+    line-height: 2em;
+    font-weight: 600; }
   div#values p {
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 0em; }
-  div#values h3 {
-    color: white;
-    line-height: 2em; }
-  div#values p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 2rem;
-    line-height: .75rem; }
+    line-height: .5em;
+    font-weight: 600;
+    font-size: 18px; }
 
 /* About */
 i.fa.fa-expand.fa-2x {

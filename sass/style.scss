@@ -1326,29 +1326,22 @@ a {
 /* About */
 
 div#values {
-  background: rgba(30, 28, 28, 0.76);
-  margin-top: .76em;
+  //background: rgba(30, 28, 28, 0.76);
+  margin-top: 3rem;
+  margin-bottom: 1rem;
   .values {
     margin-top: 1rem;
   }
-  h3 {
-    color: rgba(255, 255, 255, 1);
+  h2 {
+    //color: rgba(255, 255, 255, 1);
     line-height: 2em;
+    font-weight: 600;
   }
   p {
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 0em;
-  }
-  background: rgba(30, 28, 28, 0.76);
-  margin-top: .76em;
-  h3 {
-    color: rgba(255, 255, 255, 1);
-    line-height: 2em;
-  }
-  p {
-    color: rgba(255, 255, 255, 0.9);
-    font-size: 2rem;
-    line-height: .75rem;
+    //color: rgba(255, 255, 255, 0.9);
+    line-height: .5em;
+    font-weight: 600;
+    font-size: 18px;
   }
 }
 

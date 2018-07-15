@@ -50,7 +50,7 @@
                         <li role="separator" class="divider"></li>
                         <li><a href="/kid-classes">Kids</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="/pre-professional">Pre-Professional</a></li>
+                        <li><a href="/pre-professional">Pre-Pro</a></li>
                     </ul>
                 </li>
                 <li><a href="/our-team">Team</a></li>
