@@ -7,6 +7,14 @@
  */
 
 
+// SEO
+$ID = '1ucgFC0hL_FeFfI04XLUxOhCSz9AJjB7wYluKs1UKkEU';
+$gridID = '7';
+$url = 'https://spreadsheets.google.com/feeds/list/' . $ID . '/' . $gridID . '/public/values?alt=json'; // path to your JSON file
+$data = file_get_contents($url); // put the contents of the file into a variable
+
+file_put_contents('data/seo.json', $data);
+
 // kdis
 $ID = '1ucgFC0hL_FeFfI04XLUxOhCSz9AJjB7wYluKs1UKkEU';
 $gridID = '2';

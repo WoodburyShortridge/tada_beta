@@ -5,6 +5,10 @@
  * Date: 2/13/18
  * Time: 11:59 AM
  */
+
+$url = 'data/seo.json';
+$data = file_get_contents($url); // put the contents of the file into a variable
+$characters = json_decode($data, true); // decode the JSON feed
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,8 +26,8 @@
     <link rel="shortcut icon" href="favicon/favicon.ico">
     <link rel="icon" sizes="16x16 32x32 64x64" href="favicon/favicon.ico">
     <!-- SEO-->
-    <meta name="keywords" content="Ballet, Salsa, Hip-Hop, Modern, Jazz, adults, kids, atlanta dance academy, dance class in atlanta, dance studio in atlanta, dance school in Atlanta, ballet classes, hip-hop classes, studio rental, dance classes, dance lessons" />
-    <meta name="description" content="TADA is the leading dance studio in Atlanta. Join the best dance studio in Atlanta to learn Ballet, Jazz, Tap, Modern, Salsa, Bachata, Ballroom, Hip-Hop, Yoga, and more! We also offer classes for those with disabilities." />
+    <meta name="keywords" content="<?php foreach ($characters['feed']['entry'] as $item) { if ($item['gsx$keywords']['$t'] != "") { echo $item['gsx$keywords']['$t'] . ', '; }} ?>" />
+    <meta name="description" content="<?php foreach ($characters['feed']['entry'] as $item) { if ($item['gsx$description']['$t'] != "") { echo $item['gsx$description']['$t'] . ' '; }} ?>" />
     <title>TADA - The Atlanta Dance Academy</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
